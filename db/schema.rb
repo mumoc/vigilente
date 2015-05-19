@@ -18,9 +18,12 @@ ActiveRecord::Schema.define(version: 20150519165339) do
 
   create_table "reports", force: :cascade do |t|
     t.text     "comment"
-    t.float    "latitude"
-    t.float    "longitude"
+    t.float    "lat"
+    t.float    "lng"
     t.string   "report_type"
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "user"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
