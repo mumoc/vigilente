@@ -2,7 +2,7 @@ class Image < ActiveRecord::Base
 
   before_create :assign_original_filename
 
-  has_attached_file :asset, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
+  has_attached_file :asset, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png", url: 'crowd-reporta.s3.amazonaws.com'
   validates_attachment_content_type :asset, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
 
   private
