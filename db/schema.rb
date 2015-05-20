@@ -11,10 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150519165339) do
+ActiveRecord::Schema.define(version: 20150520180009) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "images", force: :cascade do |t|
+    t.integer  "report_id"
+    t.string   "asset_file_name"
+    t.string   "asset_content_type"
+    t.integer  "asset_file_size"
+    t.datetime "asset_updated_at"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
 
   create_table "reports", force: :cascade do |t|
     t.text     "comment"
@@ -26,6 +36,7 @@ ActiveRecord::Schema.define(version: 20150519165339) do
     t.string   "user"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.boolean  "anonymus"
   end
 
 end
