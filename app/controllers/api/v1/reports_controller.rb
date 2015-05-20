@@ -32,7 +32,7 @@ class Api::V1::ReportsController < Api::V1::BaseController
   end
 
   def report_params
-    params[:images_attributes] = image_params
+    params[:images_attributes] = image_params if params[:images].present?
     params.permit(:comment, :lat, :lng, :report_type, :provider, :uid, :user, :anonymus, images_attributes: [:asset])
   end
 
