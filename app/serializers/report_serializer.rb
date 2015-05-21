@@ -1,5 +1,5 @@
 class ReportSerializer < ActiveModel::Serializer
-  attributes :id, :comment, :lat, :lng, :report_type, :provider, :uid, :user, :anonymus, :images, :shortLink, :hashtag, :imagen, :box_number
+  attributes :id, :comment, :lat, :lng, :report_type, :provider, :uid, :user, :anonymus, :images, :shortLink, :hashtag, :imagen, :section, :district
 
   def shortLink
     "http://www.crowdint.com/"
