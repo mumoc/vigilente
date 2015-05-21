@@ -10,7 +10,7 @@ class ReportSerializer < ActiveModel::Serializer
   end
 
   def imagen
-    "http://cdn0.crowdint.com.global.prod.fastly.net/assets/crowdint-5963acccbed6d4e6d30efa65f078f83d.svg"
+    "http://demandware.edgesuite.net/aasj_prd/on/demandware.static/Sites-GoPro-Site/Sites-gopro-products/default/v1432050470342/cam-represent/surf4black.png"
   end
 
   def images
