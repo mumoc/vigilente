@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   get '/privacy', to: 'pages#privacy'
   get '/terms', to: 'pages#terms'
   get '/support', to: 'pages#support'
+
+  root to: 'pages#home'
 end
