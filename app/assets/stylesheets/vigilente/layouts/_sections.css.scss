@@ -1,0 +1,39 @@
+.section-dark {
+  background: linear-gradient($wineBerry-dark, $wineBerry-light);
+  color: $white;
+  overflow: visible;
+  padding: 30px 15px;
+
+  &:after, &:before {
+    content: ' ';
+    clear: both;
+    display: block;
+  }
+}
+
+.section-light {
+  @extend .section-dark;
+
+  background: $concrete;
+  color: $wineBerry-dark;
+}
+
+.section-phone { max-height: 650px; }
+.section-phone-image { float: left; }
+
+.section-title {
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+.section-info {
+  float: left;
+  margin-top: 15%;
+  text-align: left;
+  width: 450px;
+}
+
+.section-info-text {
+
+}

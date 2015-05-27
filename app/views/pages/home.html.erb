@@ -1,1 +1,74 @@
-<%= image_tag 'logo2x.png', class: 'logo' %>
+<section class='section-dark section-phone'>
+  <div class='wrapper'>
+    <%= image_tag('phone_01.png', alt: I18n.t(:phone_welcome), class: 'section-phone-image') %>
+
+    <h1 class='section-title'>
+      <%= image_tag('logo_top.png', alt: I18n.t(:vigilente_title)) %>
+    </h1>
+
+    <div class='section-info'>
+
+      <p><%= I18n.t(:we_need_you) %></p>
+
+      <%= link_to image_tag('appstore_icon_white.png', alt: I18n.t(:app_store)), '#', class: 'app-store'  %>
+      <%= link_to image_tag('playstore_icon_white.png', alt: I18n.t(:google_play)), '#', class: 'google-play' %>
+    </div>
+  </div>
+</section>
+
+<section class='section-light section-phone'>
+  <div class='wrapper'>
+
+    <%= image_tag('phone_02.png', alt: I18n.t(:phone_vigilente), class: 'section-phone-image') %>
+
+    <div class='section-info'>
+      <p><%= I18n.t(:build) %></p>
+      <%= link_to image_tag('appstore_icon_black.png', alt: I18n.t(:app_store)), '#', class: 'app-store' %>
+      <%= link_to image_tag('playstore_icon_black.png', alt: I18n.t(:google_play)), '#', class: 'google-play' %>
+    </div>
+  </div>
+</section>
+
+<section class='section-dark'>
+  <div class='wrapper'>
+
+    <h2 class='how-title'><%= I18n.t(:how_it_works) %></h2>
+    <article class='how-article'>
+      <header>
+        <%= image_tag('icono_captura.png', alt: I18n.t(:image, scope: :capture), class: 'how-image') %>
+        <h3 class='how-subtitle'><%= I18n.t(:title, scope: :capture) %></h3>
+      </header>
+      <p class='how-body'><%= I18n.t(:body, scope: :capture) %></p>
+    </article>
+
+    <article class='how-article'>
+      <header>
+        <%= image_tag('icono_describe.png', alt: I18n.t(:image, scope: :describe), class: 'how-image') %>
+        <h3 class='how-subtitle'><%= I18n.t(:title, scope: :describe) %></h3>
+      </header>
+      <p class='how-body'><%= I18n.t(:body, scope: :describe) %></p>
+    </article>
+
+    <article class='how-article'>
+      <header>
+        <%= image_tag('icono_reporta.png', alt: I18n.t(:image, scope: :report), class: 'how-image') %>
+        <h3 class='how-subtitle'><%= I18n.t(:title, scope: :report) %></h3>
+      </header>
+      <p class='how-body'><%= I18n.t(:body, scope: :report) %></p>
+    </article>
+
+  </div>
+</section>
+
+<section class='section-light colima'>
+  <div class='wrapper'>
+
+    <div class='colima-apps'>
+      <%= link_to image_tag('appstore_icon_black.png', alt: I18n.t(:app_store)), '#', class: 'app-store' %>
+      <%= link_to image_tag('playstore_icon_black.png', alt: I18n.t(:google_play)), '#', class: 'google-play' %>
+    </div>
+
+    <%= image_tag('logo_vamos_colima.jpg', alt: I18n.t(:como_vamos), class: 'center') %>
+    <%= image_tag('hashtag_vamos_colima.jpg', alt: I18n.t(:como_vamos_twitter), class: 'center') %>
+  </div>
+</section>

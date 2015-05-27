@@ -1,0 +1,27 @@
+.how-title {
+  color: $sandyBrown;
+  font-size: 3em;
+  margin: 0 0 50px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.how-article {
+  display: inline-table;
+  text-align: center;
+  width: 30%;
+}
+
+.how-image {
+  /*max-height: 240px;*/
+}
+
+.how-subtitle {
+  color: $white;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.how-body {
+  color: $valencia;
+}
