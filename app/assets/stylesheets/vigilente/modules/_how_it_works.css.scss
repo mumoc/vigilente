@@ -1,6 +1,8 @@
+.how-wrapper { text-align: center }
+
 .how-title {
   color: $sandyBrown;
-  font-size: 3em;
+  font-size: 6vmin;
   margin: 0 0 50px 0;
   text-align: center;
   text-transform: uppercase;
@@ -13,12 +15,12 @@
 }
 
 .how-image {
-  /*max-height: 240px;*/
+  max-width: 100%;
 }
 
 .how-subtitle {
   color: $white;
-  font-size: 2em;
+  font-size: 4vmin;
   text-transform: uppercase;
 }
 
