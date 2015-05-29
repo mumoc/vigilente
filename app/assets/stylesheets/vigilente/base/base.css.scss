@@ -7,9 +7,16 @@ body {
   padding: 0;
 }
 
-footer { text-align: center; }
+main {
+  width: 100%;
+  display: table;
+}
+
+footer {
+  text-align: center;
+}
 
 .wrapper {
-  width: 90%;
-  margin: 0 auto;
+  display: table-cell;
+  vertical-align: middle;
 }

@@ -16,23 +16,6 @@ ActiveRecord::Schema.define(version: 20150521211927) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "boxes", force: :cascade do |t|
-    t.string   "number"
-    t.string   "integer"
-    t.integer  "district"
-    t.integer  "section"
-    t.string   "location"
-    t.text     "address"
-    t.text     "references"
-    t.string   "district_head"
-    t.integer  "nominal_list"
-    t.string   "kind"
-    t.float    "longitude"
-    t.float    "latitude"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
-  end
-
   create_table "images", force: :cascade do |t|
     t.integer  "report_id"
     t.string   "asset_file_name"
