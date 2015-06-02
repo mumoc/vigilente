@@ -1,7 +1,7 @@
 development:
-  access_key_id: 'AKIAJHMC5PT4HSXPW25A'
-  secret_access_key: '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'
+  access_key_id: <%= ENV['AWS_ACCESS_KEY'] %>
+  secret_access_key: <%= ENV['AWS_SECRET_KEY'] %>
 
 production:
-  access_key_id: 'AKIAJHMC5PT4HSXPW25A'
-  secret_access_key: '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'
+  access_key_id: <%= ENV['AWS_ACCESS_KEY'] %>
+  secret_access_key: <%= ENV['AWS_SECRET_KEY'] %>

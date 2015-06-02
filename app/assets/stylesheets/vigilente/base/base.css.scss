@@ -1,4 +1,5 @@
 html {
+  font-family: 'Roboto', sans-serif;
   min-height: 100%;
 }
 
@@ -7,13 +8,9 @@ body {
   padding: 0;
 }
 
-main {
-  width: 100%;
-  display: table;
-}
-
 footer {
   text-align: center;
+  padding: 10px 0;
 }
 
 .wrapper {
