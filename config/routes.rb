@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   get '/terms', to: 'pages#terms'
   get '/support', to: 'pages#support'
 
+  get '/reportes', to: 'reports#index'
+
   resource :subscriptions, only: :create
 
   root to: 'pages#home'

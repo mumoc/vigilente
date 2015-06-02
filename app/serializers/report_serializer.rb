@@ -1,16 +1,18 @@
 class ReportSerializer < ActiveModel::Serializer
   attributes :id, :comment, :lat, :lng, :report_type, :provider, :uid, :user, :anonymus, :images, :shortLink, :hashtag, :imagen, :section, :district
 
+  include ActionView::Helpers::AssetTagHelper
+
   def shortLink
-    "http://www.crowdint.com/"
+    "http://bit.ly/1FqmA6j"
   end
 
   def hashtag
-    "#hashtag"
+    "#Vigilente"
   end
 
   def imagen
-    "http://demandware.edgesuite.net/aasj_prd/on/demandware.static/Sites-GoPro-Site/Sites-gopro-products/default/v1432050470342/cam-represent/surf4black.png"
+    ActionController::Base.helpers.image_url 'twitter-image.png'
   end
 
   def images
