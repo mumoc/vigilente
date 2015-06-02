@@ -13,6 +13,11 @@ footer {
   padding: 10px 0;
 }
 
+main {
+  display: table;
+  width: 100%;
+}
+
 .wrapper {
   display: table-cell;
   vertical-align: middle;

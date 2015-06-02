@@ -47,7 +47,7 @@
           <%= image_tag('icono_captura.png', alt: I18n.t(:image, scope: :capture), class: 'how-image') %>
           <h3 class='how-subtitle'><%= I18n.t(:title, scope: :capture) %></h3>
         </header>
-        <p class='how-body'><%= I18n.t(:body, scope: :capture) %></p>
+        <p class='how-body'><%= raw(I18n.t(:body, scope: :capture)) %></p>
       </article>
 
       <article class='how-article right-border'>
@@ -55,7 +55,7 @@
           <%= image_tag('icono_describe.png', alt: I18n.t(:image, scope: :describe), class: 'how-image') %>
           <h3 class='how-subtitle'><%= I18n.t(:title, scope: :describe) %></h3>
         </header>
-        <p class='how-body'><%= I18n.t(:body, scope: :describe) %></p>
+        <p class='how-body'><%= raw(I18n.t(:body, scope: :describe)) %></p>
       </article>
 
       <article class='how-article borderless'>
@@ -63,14 +63,14 @@
           <%= image_tag('icono_reporta.png', alt: I18n.t(:image, scope: :report), class: 'how-image') %>
           <h3 class='how-subtitle'><%= I18n.t(:title, scope: :report) %></h3>
         </header>
-        <p class='how-body'><%= I18n.t(:body, scope: :report) %></p>
+        <p class='how-body'><%= raw(I18n.t(:body, scope: :report)) %></p>
       </article>
 
       <article class='how-article-consult top-border'>
         <%= image_tag('consulta_imagen.png', alt: I18n.t(:image, scope: :consult)) %>
         <div class='how-article-consult-content'>
           <h3 class='how-subtitle'><%= I18n.t(:title, scope: :consult) %></h3>
-          <p class='how-body'><%= I18n.t(:body, scope: :consult) %></p>
+          <p class='how-body'><%= raw(I18n.t(:body, scope: :consult)) %></p>
         </div>
       </article>
   </div>
