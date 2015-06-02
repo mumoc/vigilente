@@ -14,4 +14,6 @@ Rails.application.routes.draw do
   resource :subscriptions, only: :create
 
   root to: 'pages#home'
+
+  resources :reports
 end
