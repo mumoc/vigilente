@@ -26,8 +26,8 @@ class MailchimpSubscriber
 
   def subscribe_params
     { id: ENV["MAILCHIMP_LIST_ID"],
-      email: { email: 'jparbros@gmail.com' },
-      merge_vars: { FNAME: 'jorge', LNAME: 'pardinas' },
+      email: { email: @email },
+      merge_vars: { FNAME: @fname, LNAME: @lname},
       double_optin: false
     }
   end
