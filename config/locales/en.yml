@@ -29,3 +29,8 @@ en:
   como_vamos: ¿Cómo vamos? Colima?
   como_vamos_twitter: '#CómoVamosColima'
   disclaimer: El Vigilente es una aplicación apartidista y creada sin fines de lucro.
+  form:
+    legend: Regístrate y mantente informado
+    name: Nombre
+    email: E-mail
+    submit: Enviar
