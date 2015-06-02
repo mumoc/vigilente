@@ -1,15 +1,3 @@
 .colima {
   background: $white;
 }
-
-.colima-apps {
-  width: 450px;
-  margin: 0 auto;
-
-  &:after, &:before {
-    clear: both;
-    content: ' ';
-    display: block;
-    float: none;
-  }
-}
