@@ -1,0 +1,37 @@
+.text {
+  @include placeholder {
+    color: $dusty-gray;
+  }
+
+  background-color: $white;
+  color: $dusty-gray;
+  float: left;
+  font-size: 16px;
+  font-weight: 300;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.submit {
+  @include button($valencia, $white);
+
+  background-color: $valencia;
+  color: $white;
+  float: left;
+  font-size: 21px;
+  font-weight: 400;
+  padding: 8px 30px;
+  text-transform: uppercase;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.legend {
+  color: $white;
+  font-size: 21px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+

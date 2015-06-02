@@ -1,0 +1,20 @@
+.build-description {
+  color: $tundora;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 100px 0 123px;
+  max-width: 580px;
+}
+
+.build-legend {
+  color: $tundora;
+}
+
+.build-section {
+  background-image: -ms-linear-gradient(bottom, #501947 0%, #501947 25%, 	#ffffff 25%, #ffffff 50%, #f2f2f2 50%, #f2f2f2 100%);
+  background-image: -moz-linear-gradient(bottom, #501947 0%, #501947 25%, #ffffff 25%, #ffffff 50%, #f2f2f2 50%, #f2f2f2 100%);
+  background-image: -o-linear-gradient(bottom, #501947 0%, #501947 25%, #ffffff 25%, #ffffff 50%, #f2f2f2 50%, #f2f2f2 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #501947), color-stop(0.25, #501947), color-stop(0.25, ffffff), color-stop(0.5, ffffff), color-stop(0.5, #f2f2f2), color-stop(1, #f2f2f2));
+  background-image: -webkit-linear-gradient(bottom, #501947 0%, #501947 25%, 	#ffffff 25%, 	ffffff 50%, #f2f2f2 50%, #f2f2f2 100%);
+  background-image: linear-gradient(to top, #501947 0%, #501947 25%, #ffffff 25%, #ffffff 50%, #f2f2f2 50%, #f2f2f2 100%);
+}

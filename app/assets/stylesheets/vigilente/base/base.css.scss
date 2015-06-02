@@ -13,7 +13,14 @@ footer {
   padding: 10px 0;
 }
 
+main {
+  display: table;
+  width: 100%;
+}
+
 .wrapper {
-  width: 90%;
-  margin: 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 45px 0;
 }
