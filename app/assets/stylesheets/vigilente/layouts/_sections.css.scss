@@ -3,14 +3,6 @@
   color: $white;
   display: table-row;
   height: 100vh;
-  /*overflow: visible;*/
-  /*padding: 30px 15px;*/
-
-  /*&:after, &:before {*/
-    /*content: ' ';*/
-    /*clear: both;*/
-    /*display: block;*/
-  /*}*/
 }
 
 .section-light {
@@ -20,21 +12,14 @@
   color: $wineBerry-dark;
 }
 
-/*.section-phone { max-height: 650px; }*/
 .section-phone-image {
-  position: absolute;
-  left: 0px;
+  display: inline-block;
+  margin-right: 30px;
 }
 
-.section-title {
-  margin-bottom: 50%;
+.section-content {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
 }
 
-.section-info {
-  width: 500px;
-  margin: 0 auto;
-}
-
-/*.section-info-text {*/
-
-/*}*/

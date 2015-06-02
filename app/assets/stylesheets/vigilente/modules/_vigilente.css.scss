@@ -1,4 +1,7 @@
-.vigilente:before {
-  content: ' ';
-  background: image-url('phone_01.png');
+.vigilente-description {
+  color: $white;
+  font-size: 35px;
+  font-weight: 400;
+  margin: 150px 0 130px;
+  max-width: 580px;
 }
