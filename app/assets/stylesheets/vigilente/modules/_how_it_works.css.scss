@@ -1,6 +1,8 @@
+.how-wrapper { text-align: center }
+
 .how-title {
   color: $sandyBrown;
-  font-size: 3em;
+  font-size: 6vmin;
   margin: 0 0 50px 0;
   text-align: center;
   text-transform: uppercase;
@@ -10,15 +12,37 @@
   display: inline-table;
   text-align: center;
   width: 30%;
+
+  &.right-border {
+    border-right: 1px dashed $valencia;
+  }
+
+  &.top-border {
+    border-top: 1px dashed $valencia;
+    padding: 35px 0;
+  }
+}
+
+.how-article-consult {
+  @extend .how-article;
+
+  margin-top: 50px;
+  width: 50%;
+}
+
+.how-article-consult-content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
 }
 
 .how-image {
-  /*max-height: 240px;*/
+  max-width: 100%;
 }
 
 .how-subtitle {
   color: $white;
-  font-size: 2em;
+  font-size: 4vmin;
   text-transform: uppercase;
 }
 
