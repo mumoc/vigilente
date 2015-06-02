@@ -2,7 +2,7 @@ class SubscriptionsController < ApplicationController
   skip_before_filter  :verify_authenticity_token
 
   def create
-    subscriber.subscribe
+    response = subscriber.subscribe
   end
 
   private

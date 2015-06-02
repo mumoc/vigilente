@@ -17,11 +17,11 @@ class MailchimpSubscriber
 
   private
   def gibbon_list_id
-    Rails.application.secrets.mailchimp_list_id
+    ENV["MAILCHIMP_LIST_ID"]
   end
 
   def gb
-    Gibbon::API.new
+    Gibbon::API.new ENV["MAILCHIMP_API_KEY"]
   end
 
   def subscribe_params

@@ -13,7 +13,7 @@ en:
   capture:
     image: Captura
     title: Captura o sube
-    body: Toma na foto del delito <br/> que está sucediendo.
+    body: Toma una foto del delito <br/> que está sucediendo.
   describe:
     image: Describe
     title: Describe

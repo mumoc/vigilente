@@ -1,0 +1,1 @@
+$('#form-subscription-container').html('<h1>Gracias por registrarte</h1>')
