@@ -2,28 +2,15 @@
   color: $white;
   font-size: 35px;
   font-weight: 400;
-  margin: 150px 0 130px;
+  margin: 40px 0;
   max-width: 580px;
 }
 
 .vigilente-section {
-  background-image: -ms-linear-gradient(bottom, #f2f2f2 0%, #f2f2f2 25%, 	rgba(57, 21, 51, .9) 25%, rgba(57, 21, 51, .9) 50%, #391533 50%, #501947 100%);
-  background-image: -moz-linear-gradient(bottom, #f2f2f2 0%, #f2f2f2 25%, rgba(57, 21, 51, .9) 25%, rgba(57, 21, 51, .9) 50%, #391533 50%, #501947 100%);
-  background-image: -o-linear-gradient(bottom, #f2f2f2 0%, #f2f2f2 25%, rgba(57, 21, 51, .9) 25%, rgba(57, 21, 51, .9) 50%, #391533 50%, #501947 100%);
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f2f2f2), color-stop(0.25, #f2f2f2), color-stop(0.25, rgba(57, 21, 51, .9)), color-stop(0.5, rgba(57, 21, 51, .9)), color-stop(0.5, #391533), color-stop(1, #501947));
-  background-image: -webkit-linear-gradient(bottom, #f2f2f2 0%, #f2f2f2 25%, 	rgba(57, 21, 51, .9) 25%, 	rgba(57, 21, 51, .9) 50%, #391533 50%, #501947 100%);
-  background-image: linear-gradient(to top, #f2f2f2 0%, #f2f2f2 25%, rgba(57, 21, 51, .9) 25%, rgba(57, 21, 51, .9) 50%, #391533 50%, #501947 100%);
+  background-image: linear-gradient(to top, #391533 0%, #501947 100%);
 }
 
 @media #{$phone} {
-  .vigilente-section {
-    background-image: linear-gradient(to top, #391533 0%, #501947 100%);
-  }
-
-  .vigilente-description {
-    margin: 30px 0;
-  }
-
   .vigilente-phone {
     display: none;
   }

@@ -50,6 +50,10 @@
   color: $valencia;
 }
 
+.how-image-consult {
+  width: 400px;
+}
+
 @media #{$phone} {
   .how-phone {
     display: none;
