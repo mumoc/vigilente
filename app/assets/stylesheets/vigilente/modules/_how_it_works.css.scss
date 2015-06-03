@@ -50,7 +50,7 @@
   color: $valencia;
 }
 
-@media (max-width: 640px) {
+@media #{$phone} {
   .how-phone {
     display: none;
   }

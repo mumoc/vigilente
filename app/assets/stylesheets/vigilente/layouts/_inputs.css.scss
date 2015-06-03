@@ -45,7 +45,7 @@
   }
 }
 
-@media (max-width: 640px) {
+@media #{$phone} {
   .text, .submit {
     display: block;
     margin: 5px 0;
