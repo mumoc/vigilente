@@ -49,3 +49,27 @@
 .how-body {
   color: $valencia;
 }
+
+.how-image-consult {
+  width: 400px;
+}
+
+@media #{$phone} {
+  .how-article {
+    width: 100%;
+
+    &.right-border {
+      border-right: none;
+    }
+  }
+
+  .how-article-consult-content {
+    display: block;
+    text-align: center;
+  }
+
+  .how-image-consult {
+    max-width: 100%;
+  }
+}
+

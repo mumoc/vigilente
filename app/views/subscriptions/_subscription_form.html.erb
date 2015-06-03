@@ -1,9 +1,8 @@
-<div id="form-subscription-container" >
+<div id="form-subscription-container" class='form-container' >
   <%= form_tag(subscriptions_path, remote: true) do -%>
     <legend class="legend <%= klass %>"><%= I18n.t(:legend, scope: :form) %></legend>
      <%= text_field_tag(:name, '', placeholder: I18n.t(:name, scope: :form), class: 'text')%>
      <%= email_field_tag(:email, '', placeholder: I18n.t(:email, scope: :form), class: 'text') %>
      <%= submit_tag(I18n.t(:submit, scope: :form), class: 'submit') %>
   <% end %>
-
 </div>
