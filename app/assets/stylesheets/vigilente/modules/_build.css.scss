@@ -13,3 +13,9 @@
 .build-section {
   background-image: linear-gradient(to top, #f2f2f2 0%, #f2f2f2 100%);
 }
+
+@media #{$phone} {
+  .build-phone {
+    display: none;
+  }
+}
