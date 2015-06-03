@@ -14,3 +14,8 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+$('form').on('submit', function() {
+  ga('send', 'event', 'user', 'subscription');
+});
