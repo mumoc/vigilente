@@ -12,7 +12,7 @@ class ReportSerializer < ActiveModel::Serializer
   end
 
   def imagen
-    ActionController::Base.helpers.image_path('twitter-image.png')
+    "http://vigilente.mx/twitter-image.png"
   end
 
   def images
