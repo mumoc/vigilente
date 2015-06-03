@@ -1,8 +1,4 @@
 .text {
-  @include placeholder {
-    color: $dusty-gray;
-  }
-
   background-color: $white;
   color: $dusty-gray;
   float: left;
@@ -10,6 +6,11 @@
   font-weight: 300;
   margin-right: 10px;
   padding: 10px;
+
+  @include sizing(border-box);
+  @include placeholder {
+    color: $dusty-gray;
+  }
 }
 
 .submit {
@@ -33,5 +34,22 @@
   font-size: 21px;
   font-weight: 300;
   margin-bottom: 15px;
+}
+
+.form-container {
+  &:before, &:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    float: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .text, .submit {
+    display: block;
+    margin: 5px 0;
+    width: 100%;
+  }
 }
 
