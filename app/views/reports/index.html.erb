@@ -1,7 +1,7 @@
 <header class='reports-header'>
   <h1 class='reports-header-title'><%= image_tag('logo_top.png', alt: I18n.t(:vigilente_title)) %></h1>
   <nav class='reports-header-nav'>
-    <%= link_to I18n.t(:about, scope: [:reports, :header]), '#', class: 'reports-header-about' %>
+    <%= link_to I18n.t(:about, scope: [:reports, :header]), '#', class: 'reports-header-about js-popup' %>
     <%= link_to I18n.t(:consult, scope: [:reports, :header]), '#', class: 'reports-header-consult' %>
   </nav>
 </header>
@@ -38,4 +38,14 @@
 
 <%- content_for :javascripts do %>
   <%= render partial: 'map_scripts' %>
+
+  <script>
+    $(document).ready(function(){
+      new (Vigilente.Popup)({ popup: $('#about-popup'), triggers: $('.js-popup') })
+
+
+    });
+  </script>
+
+
 <% end %>
