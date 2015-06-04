@@ -188,6 +188,11 @@
 }
 
 /*CRIMES FOOTER*/
+.reports-crimes-footer {
+  border-bottom: 1px solid $sandyBrown;
+  padding: 50px 0 35px 0;
+}
+
 .reports-crimes-pagination {
   @extend %display-table;
 }
