@@ -38,7 +38,7 @@ class Vigilente.Crimes
 
   closeAll: ->
     @$list.
-      find('.js-crime').
+      find('.js-crime, .js-big-image').
       removeClass 'active'
 
   toggleCrime: ($trigger, toggle = false) =>
@@ -50,6 +50,8 @@ class Vigilente.Crimes
   toggleBigImage: ($crime, $image) ->
     $crime.
       find('.js-big-image-container').
+      find('.reports-crime-image').
+      remove('').end().
       append($image).end().
       find('.js-big-image').
       addClass 'active'
