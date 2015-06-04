@@ -14,8 +14,17 @@
   background-image: linear-gradient(to top, #f2f2f2 0%, #f2f2f2 100%);
 }
 
+.build-phone-mobile {
+  display: none;
+}
+
 @media #{$phone} {
   .build-phone {
     display: none;
   }
+
+  .build-phone-mobile {
+    display: inline-block;
+  }
+
 }

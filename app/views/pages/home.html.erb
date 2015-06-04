@@ -1,7 +1,7 @@
-<main>
-  <section id='vigilente' class='section-dark section-phone vigilente-section'>
-    <div class='wrapper'>
-      <article>
+<section id='vigilente' class='section-dark section-phone vigilente-section'>
+  <div class='wrapper'>
+    <article>
+      <%= image_tag('urna_mapache_mobile.png', alt: I18n.t(:phone_welcome), class: 'vigilente-phone-mobile') %>
 
         <%= image_tag('phone_01.png', alt: I18n.t(:phone_welcome), class: 'section-phone-image vigilente-phone') %>
 
@@ -16,11 +16,12 @@
     </div>
   </section>
 
-  <section id='build' class='section-light section-phone build-section'>
-    <div class='wrapper'>
-      <article>
+<section id='build' class='section-light section-phone build-section'>
+  <div class='wrapper'>
+    <article>
+      <%= image_tag('group_mobile.png', alt: I18n.t(:phone_vigilente), class: 'build-phone-mobile') %>
 
-        <%= image_tag('phone_02.png', alt: I18n.t(:phone_welcome), class: 'section-phone-image build-phone') %>
+      <%= image_tag('phone_02.png', alt: I18n.t(:phone_vigilente), class: 'section-phone-image build-phone') %>
 
         <div class='section-content'>
           <h2><%= image_tag('logo_top_02.png', alt: I18n.t(:vigilente_title)) %></h2>

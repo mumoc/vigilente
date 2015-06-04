@@ -10,9 +10,17 @@
   background-image: linear-gradient(to top, #391533 0%, #501947 100%);
 }
 
+.vigilente-phone-mobile {
+  display: none;
+}
+
 @media #{$phone} {
   .vigilente-phone {
     display: none;
+  }
+
+  .vigilente-phone-mobile {
+    display: inline-block;
   }
 }
 
