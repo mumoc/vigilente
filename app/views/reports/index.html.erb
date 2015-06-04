@@ -8,10 +8,10 @@
 <div class='reports-content'>
   <%= render partial: 'nav' %>
 
-  <main>
+  <main class='section-reports'>
   <section>
-    <h2><%= I18n.t(:map_title, scope: [:reports, :main]) %></h2>
-    <div id="map-canvas" class=""></div>
+    <h2 class='reports-map-title'><%= I18n.t(:map_title, scope: [:reports, :main]) %></h2>
+    <div id='map-canvas' class='reports-map'></div>
   </section>
   <section>
     <header>

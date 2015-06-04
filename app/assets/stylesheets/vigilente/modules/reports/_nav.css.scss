@@ -5,7 +5,7 @@
 .reports-nav {
   background-color: $concrete;
   display: table-cell;
-  width: 350px;
+  min-width: 350px;
   text-align: right;
   padding-left: 30px;
 }
