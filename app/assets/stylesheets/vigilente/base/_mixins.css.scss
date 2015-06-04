@@ -28,3 +28,10 @@
   -webkit-box-sizing: $sizing;
   -moz-box-sizing:    $sizing;
 }
+
+@mixin box-shadow($props...) {
+  -webkit-box-shadow: $props;
+  -moz-box-shadow:    $props;
+  box-shadow:         $props;
+}
+

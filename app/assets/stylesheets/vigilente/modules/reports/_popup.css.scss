@@ -2,7 +2,7 @@
   @include sizing(border-box);
   @include transition(500ms, ease-in-out);
 
-  background: linear-gradient($wineBerryDark, $wineBerryLight);
+  background: linear-gradient(rgba(80, 25, 71, 0.9), rgba(57, 21, 51, 0.9));
   color: $white;
   opacity: 0;
   overflow: hidden;
