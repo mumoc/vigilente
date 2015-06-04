@@ -1,4 +1,3 @@
 .reports-colima {
-  display: table;
-  width: 100%;
+  @extend %display-table;
 }

@@ -1,3 +1,8 @@
+%display-table {
+  display: table;
+  width: 100%;
+}
+
 html {
   font-family: 'Roboto', sans-serif;
   min-height: 100%;
@@ -14,8 +19,7 @@ footer {
 }
 
 main {
-  display: table;
-  width: 100%;
+  @extend %display-table;
 }
 
 .wrapper {

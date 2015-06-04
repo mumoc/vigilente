@@ -1,10 +1,9 @@
 .reports-header {
   @include sizing(border-box);
+  @extend %display-table;
 
   background-image: linear-gradient(to top, #391533 0%, #501947 100%);
-  display: table;
   padding: 10px 20px;
-  width: 100%;
 }
 
 .reports-header-title {

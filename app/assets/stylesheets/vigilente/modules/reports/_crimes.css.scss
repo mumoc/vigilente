@@ -6,9 +6,9 @@
 /*CRIMES HEADER*/
 
 .reports-crimes-header {
-  display: table;
+  @extend %display-table;
+
   padding: 15px 0;
-  width: 100%;
 }
 
 .reports-crimes-title {
@@ -109,8 +109,7 @@
 
 /*CRIMES FOOTER*/
 .reports-crimes-pagination {
-  display: table;
-  width: 100%;
+  @extend %display-table;
 }
 
 .reports-crimes-page {
