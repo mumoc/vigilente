@@ -26,16 +26,16 @@
 
     <ul class='reports-crimes-list'>
       <li class='reports-crime'>
-      <b>3</b>
-      <figure>
-        <%= image_tag('dummy.png', alt: 'image_1')%>
-        <figcaption>2 images</figcaption>
-      </figure>
-      <div>
-        <h3>Compra de votos</h3>
-        <p>Dummy awa ko nore su</p>
-        <%= link_to I18n.t(:view_more, scope: [:reports, :main]), '#'%>
-      </div>
+        <b class='reports-crime-counter'>3</b>
+        <figure class='reports-crime-images'>
+          <%= image_tag('dummy.png', alt: 'image_1')%>
+          <figcaption class='reports-image-caption'>2 images</figcaption>
+        </figure>
+        <div class='reports-crime-description'>
+          <h3 class='reports-crime-description-title'>Compra de votos</h3>
+          <p class='reports-crime-description-text'>Dummy awa ko nore su</p>
+          <%= link_to I18n.t(:view_more, scope: [:reports, :main]), '#', class: 'reports-crime-description-more'%>
+        </div>
       </li>
     </ul>
     <nav>
