@@ -105,6 +105,12 @@
   }
 }
 
+.reports-crime-image:hover {
+  @include box-shadow(0px 0px 5px $dustyGray);
+
+  cursor: pointer;
+}
+
 .reports-image-caption {
   font-size: 12px;
   color: $tundora;
@@ -140,6 +146,32 @@
 
   .active & {
     display: none;
+  }
+}
+
+/*ITEM CRIME BIG IMAGE*/
+.reports-crime-big-image {
+  background-color: rgba(242, 242, 242, .8);
+  display: none;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+
+  &.active {
+    display: block;
+  }
+}
+
+.reports-crime-big-image-container {
+  height: 100%;
+  width: 25%;
+  margin: 0 auto;
+  position: relative;
+
+  img {
+    height: 100%;
   }
 }
 

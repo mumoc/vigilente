@@ -42,10 +42,7 @@
   <script>
     $(document).ready(function(){
       new (Vigilente.Popup)({ popup: $('#about-popup'), triggers: $('.js-popup') });
-      new (Vigilente.Crimes)({ list: $('.js-crimes'),
-                               crimeClass: '.js-crime',
-                               moreClass: '.js-crime-more',
-                               closeClass: '.js-crime-close' });
+      new (Vigilente.Crimes)({ list: $('.js-crimes') });
     });
   </script>
 
