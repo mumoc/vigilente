@@ -205,3 +205,15 @@
   }
 }
 
+@media #{$phone} {
+  .reports-crimes-info {
+    display: none;
+  }
+
+  .reports-crime-big-image-container {
+    width: 100%;
+  }
+}
+
+
+
