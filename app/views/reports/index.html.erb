@@ -10,12 +10,14 @@
   <%= render partial: 'nav' %>
 
   <main class='section-reports'>
-    <section>
+    <%= render partial: 'about_popup' %>
+
+    <section class='sections-map'>
       <h2 class='reports-map-title'><%= I18n.t(:map_title, scope: [:reports, :main]) %></h2>
       <div id='map-canvas' class='reports-map'></div>
     </section>
 
-    <section>
+    <section class='sections-crimes'>
       <%= render partial: 'crimes_header' %>
 
       <ul class='reports-crimes-list'>

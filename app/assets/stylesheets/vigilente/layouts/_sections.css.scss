@@ -26,6 +26,14 @@
 
 .section-reports {
   display: table-cell;
-  padding: 25px;
+  position: relative;
   width: 100%;
+}
+
+.sections-map {
+  padding: 25px 25px 0px 25px;
+}
+
+.sections-crimes {
+  padding: 0px 25px 25px 25px;
 }

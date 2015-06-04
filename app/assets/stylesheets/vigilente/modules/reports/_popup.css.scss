@@ -1,0 +1,25 @@
+.popup {
+  @include sizing(border-box);
+  @include transition(500ms, ease-in-out);
+
+  background: linear-gradient($wineBerryDark, $wineBerryLight);
+  color: $white;
+  opacity: 0;
+  overflow: hidden;
+  padding: 25px;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+
+  &.active {
+    opacity: 1;
+    z-index: 1000;
+  }
+
+}
+
+.popup-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}

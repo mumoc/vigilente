@@ -54,3 +54,8 @@ en:
       view_more: Ver más
       prev: Anterior
       next: Siguiente
+  popup:
+    description: |
+      Construímos esta aplicación por una necesidad social en la siguiente contienda
+      electoral a celebrarse el <strong>domingo 7 de Junio de 2015</strong>; buscando
+      que la ciudadanía tenga un proceso transparente, claro y democrático.

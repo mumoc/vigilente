@@ -1,0 +1,5 @@
+<section id='abount-popup' class='popup'>
+  <%= link_to image_tag('close_icon.png'), '#', class: 'popup-close' %>
+  <p><%= raw I18n.t(:description, scope: :popup) %></p>
+  <%= render partial: 'process_info' %>
+</section>
