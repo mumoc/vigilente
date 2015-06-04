@@ -1,3 +1,9 @@
+%reports-header-link {
+  font-weight: bold;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
 .reports-header {
   @include sizing(border-box);
   @extend %display-table;
@@ -15,10 +21,9 @@
   text-align: right;
 }
 
-%reports-header-link {
-  font-weight: bold;
-  margin-left: 30px;
-  text-decoration: none;
+.reports-header-burguer {
+  display: none;
+  vertical-align: middle;
 }
 
 .reports-header-about {
@@ -26,9 +31,22 @@
 
   color: $sandyBrown;
 }
+
 .reports-header-consult {
   @extend %reports-header-link;
 
   color: $valencia;
 }
+
+@media #{$phone} {
+  .reports-header-nav {
+    display: none;
+  }
+
+  .reports-header-burguer {
+    display: table-cell;
+  }
+}
+
+
 

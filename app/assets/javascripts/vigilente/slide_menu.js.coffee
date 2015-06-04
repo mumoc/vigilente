@@ -1,17 +1,17 @@
 window.Vigilente ||= {}
 
-class Vigilente.Popup
+class Vigilente.SlideMenu
   constructor: ->
-    @$popup = arguments[0].popup
+    @$menu = arguments[0].menu
     @$triggers = arguments[0].triggers
     @bindActions()
 
   bindActions: ->
     @$triggers.on 'click', =>
-      display = !@$popup.hasClass('active')
+      display = !@$menu.hasClass('active')
       @toggle display
       false
 
   toggle: (display) ->
-    @$popup.toggleClass 'active', display
+    @$menu.toggleClass 'active', display
 

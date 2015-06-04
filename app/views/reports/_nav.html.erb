@@ -1,36 +1,36 @@
 <nav class='reports-nav'>
   <h2 class='reports-nav-title'><%= I18n.t(:title, scope: [:reports, :nav]) %></h2>
-  <%= link_to '#', class: 'reports-nav-link' do %>
+  <%= link_to '#', class: 'reports-nav-link js-nav-toggle' do %>
     <span><%= raw I18n.t(:all, scope: [:reports, :nav]) %></span>
   <%= image_tag('crimes/icono_todos_delitos.png') %>
 <% end %>
 
-  <%= link_to '#', class: 'reports-nav-link' do %>
+  <%= link_to '#', class: 'reports-nav-link js-nav-toggle' do %>
     <span><%= raw I18n.t(:publicity, scope: [:reports, :nav]) %></span>
   <%= image_tag('crimes/icono_publicidad.png') %>
 <% end %>
 
-  <%= link_to '#', class: 'reports-nav-link' do %>
+  <%= link_to '#', class: 'reports-nav-link js-nav-toggle' do %>
     <span><%= raw I18n.t(:racoons, scope: [:reports, :nav]) %></span>
   <%= image_tag('crimes/icono_mapaches.png') %>
 <% end %>
 
-  <%= link_to '#', class: 'reports-nav-link' do %>
+  <%= link_to '#', class: 'reports-nav-link js-nav-toggle' do %>
     <span><%= raw I18n.t(:violence, scope: [:reports, :nav]) %></span>
   <%= image_tag('crimes/icono_violencia.png') %>
 <% end %>
 
-  <%= link_to '#', class: 'reports-nav-link active' do %>
+  <%= link_to '#', class: 'reports-nav-link js-nav-toggle active' do %>
     <span><%= raw I18n.t(:buy, scope: [:reports, :nav]) %></span>
   <%= image_tag('crimes/icono_compra_votos.png') %>
 <% end %>
 
-  <%= link_to '#', class: 'reports-nav-link' do %>
+  <%= link_to '#', class: 'reports-nav-link js-nav-toggle' do %>
     <span><%= raw I18n.t(:credentials, scope: [:reports, :nav]) %></span>
   <%= image_tag('crimes/icono_credenciales.png') %>
 <% end %>
 
-  <%= link_to '#', class: 'reports-nav-link' do %>
+  <%= link_to '#', class: 'reports-nav-link js-nav-toggle' do %>
     <span><%= raw I18n.t(:gifts, scope: [:reports, :nav]) %></span>
   <%= image_tag('crimes/icono_regalos.png') %>
 <% end %>
