@@ -11,11 +11,14 @@ Rails.application.routes.draw do
   get '/terms', to: 'pages#terms'
   get '/support', to: 'pages#support'
 
-  get '/reportes', to: 'reports#index'
+  # get '/reportes', to: 'reports#index'
+  get '/reportes', to: redirect('/')
 
   resource :subscriptions, only: :create
 
   root to: 'pages#home'
 
   resources :reports
+
+
 end
