@@ -1,0 +1,9 @@
+<header class='reports-crimes-header'>
+  <h2 class='reports-crimes-title'><%= I18n.t(:list_title, scope: [:reports, :main]) %></h2>
+  <div class='reports-crimes-info'>
+    <p class='reports-crimes-description'><%= raw I18n.t(:description, scope: [:reports, :main]) %></p>
+    <div class='reports-separator'></div>
+    <%= link_to image_tag('appstore_icon_black.png', alt: I18n.t(:app_store)), '#', class: 'reports-crimes-app' %>
+    <%= link_to image_tag('playstore_icon_black.png', alt: I18n.t(:google_play)), '#', class: 'reports-crimes-app' %>
+  </div>
+</header>

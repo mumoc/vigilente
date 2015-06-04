@@ -3,6 +3,8 @@
   vertical-align: middle;
 }
 
+/*CRIMES HEADER*/
+
 .reports-crimes-header {
   display: table;
   padding: 15px 0;
@@ -103,5 +105,24 @@
   color: $valencia;
   font-size: 14px;
   text-decoration: none;
+}
+
+/*CRIMES FOOTER*/
+.reports-crimes-pagination {
+  display: table;
+  width: 100%;
+}
+
+.reports-crimes-page {
+  color: $dustyGray;
+  display: table-cell;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &.active {
+    color: $tundora;
+  }
 }
 

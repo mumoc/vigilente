@@ -5,46 +5,32 @@
     <%= link_to I18n.t(:consult, scope: [:reports, :header]), '#', class: 'reports-header-consult' %>
   </nav>
 </header>
+
 <div class='reports-content'>
   <%= render partial: 'nav' %>
 
   <main class='section-reports'>
-  <section>
-    <h2 class='reports-map-title'><%= I18n.t(:map_title, scope: [:reports, :main]) %></h2>
-    <div id='map-canvas' class='reports-map'></div>
-  </section>
-  <section>
-    <header class='reports-crimes-header'>
-      <h2 class='reports-crimes-title'><%= I18n.t(:list_title, scope: [:reports, :main]) %></h2>
-      <div class='reports-crimes-info'>
-        <p class='reports-crimes-description'><%= raw I18n.t(:description, scope: [:reports, :main]) %></p>
-        <div class='reports-separator'></div>
-        <%= link_to image_tag('appstore_icon_black.png', alt: I18n.t(:app_store)), '#', class: 'reports-crimes-app' %>
-        <%= link_to image_tag('playstore_icon_black.png', alt: I18n.t(:google_play)), '#', class: 'reports-crimes-app' %>
-      </div>
-    </header>
+    <section>
+      <h2 class='reports-map-title'><%= I18n.t(:map_title, scope: [:reports, :main]) %></h2>
+      <div id='map-canvas' class='reports-map'></div>
+    </section>
 
-    <ul class='reports-crimes-list'>
-      <li class='reports-crime'>
-        <b class='reports-crime-counter'>3</b>
-        <figure class='reports-crime-images'>
-          <%= image_tag('dummy.png', alt: 'image_1')%>
-          <figcaption class='reports-image-caption'>2 images</figcaption>
-        </figure>
-        <div class='reports-crime-description'>
-          <h3 class='reports-crime-description-title'>Compra de votos</h3>
-          <p class='reports-crime-description-text'>Dummy awa ko nore su</p>
-          <%= link_to I18n.t(:view_more, scope: [:reports, :main]), '#', class: 'reports-crime-description-more'%>
-        </div>
-      </li>
-    </ul>
-    <nav>
-      <%= link_to I18n.t(:prev, scope: [:reports, :main]), '#' %>
-      <%= link_to I18n.t(:next, scope: [:reports, :main]), '#' %>
-    </nav>
-  </section>
-  <%= render partial: 'colima', locals: { klass: '' } %>
-  <%= render partial: 'footer' %>
+    <section>
+      <%= render partial: 'crimes_header' %>
+
+      <ul class='reports-crimes-list'>
+        <%= render partial: 'crime_item' %>
+        <%= render partial: 'crime_item' %>
+        <%= render partial: 'crime_item' %>
+        <%= render partial: 'crime_item' %>
+      </ul>
+
+      <%= render partial: 'crimes_footer' %>
+    </section>
+
+    <%= render partial: 'colima', locals: { klass: '' } %>
+    <%= render partial: 'footer' %>
+
   </main>
 </div>
 
