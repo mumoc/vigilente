@@ -1,20 +1,21 @@
+<main>
 <section id='vigilente' class='section-dark section-phone vigilente-section'>
   <div class='wrapper'>
     <article>
       <%= image_tag('urna_mapache_mobile.png', alt: I18n.t(:phone_welcome), class: 'vigilente-phone-mobile') %>
 
-        <%= image_tag('phone_01.png', alt: I18n.t(:phone_welcome), class: 'section-phone-image vigilente-phone') %>
+      <%= image_tag('phone_01.png', alt: I18n.t(:phone_welcome), class: 'section-phone-image vigilente-phone') %>
 
-        <div class='section-content'>
-          <h1><%= image_tag('logo_top.png', alt: I18n.t(:vigilente_title)) %></h1>
+      <div class='section-content'>
+        <h1><%= image_tag('logo_top.png', alt: I18n.t(:vigilente_title)) %></h1>
 
-          <p class='vigilente-description'><%= I18n.t(:we_need_you) %></p>
+        <p class='vigilente-description'><%= I18n.t(:we_need_you) %></p>
 
-          <%= render partial: 'subscriptions/subscription_form', locals: { klass: '' }%>
-        </div>
-      </article>
-    </div>
-  </section>
+        <%= render partial: 'subscriptions/subscription_form', locals: { klass: '' }%>
+      </div>
+    </article>
+  </div>
+</section>
 
 <section id='build' class='section-light section-phone build-section'>
   <div class='wrapper'>
@@ -23,33 +24,33 @@
 
       <%= image_tag('phone_02.png', alt: I18n.t(:phone_vigilente), class: 'section-phone-image build-phone') %>
 
-        <div class='section-content'>
-          <h2><%= image_tag('logo_top_02.png', alt: I18n.t(:vigilente_title)) %></h2>
+      <div class='section-content'>
+        <h2><%= image_tag('logo_top_02.png', alt: I18n.t(:vigilente_title)) %></h2>
 
-          <p class='build-description'><%= raw(I18n.t(:build)) %></p>
+        <p class='build-description'><%= raw(I18n.t(:build)) %></p>
 
-          <%= render partial: 'subscriptions/subscription_form', locals: { klass: 'build-legend' }%>
-        </div>
-      </article>
-    </div>
-  </section>
+        <%= render partial: 'subscriptions/subscription_form', locals: { klass: 'build-legend' }%>
+      </div>
+    </article>
+  </div>
+</section>
 
-  <section id='how' class='section-dark'>
-    <div class='wrapper how-wrapper'>
+<section id='how' class='section-dark'>
+  <div class='wrapper how-wrapper'>
 
-      <h2 class='how-title'><%= I18n.t(:how_it_works) %></h2>
+    <h2 class='how-title'><%= I18n.t(:how_it_works) %></h2>
 
-      <%= render partial: 'process_info' %>
+    <%= render partial: 'process_info' %>
 
-      <article class='how-article-consult top-border'>
-        <%= image_tag('consulta_imagen.png', alt: I18n.t(:image, scope: :consult), class: 'how-image-consult') %>
-        <div class='how-article-consult-content'>
-          <h3 class='how-subtitle'><%= I18n.t(:title, scope: :consult) %></h3>
-          <p class='how-body'><%= raw(I18n.t(:body, scope: :consult)) %></p>
-        </div>
-      </article>
-    </div>
-  </section>
+    <article class='how-article-consult top-border'>
+      <%= image_tag('consulta_imagen.png', alt: I18n.t(:image, scope: :consult), class: 'how-image-consult') %>
+      <div class='how-article-consult-content'>
+        <h3 class='how-subtitle'><%= I18n.t(:title, scope: :consult) %></h3>
+        <p class='how-body'><%= raw(I18n.t(:body, scope: :consult)) %></p>
+      </div>
+    </article>
+  </div>
+</section>
 
   <%= render partial: 'colima', locals: { klass: 'section-light colima' } %>
 </main>
