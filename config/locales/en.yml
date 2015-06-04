@@ -26,9 +26,15 @@ en:
     image: Consulta
     title: Consulta
     body: Consulta el mapa y la galería <br/> de fotos para ver en donde <br/> ocurren los delitos.
-  como_vamos: ¿Cómo vamos? Colima?
-  como_vamos_twitter: '#CómoVamosColima'
-  disclaimer: El Vigilente es una aplicación apartidista y creada sin fines de lucro.
+  colima:
+    disclaimer: |
+      Vigilente es una aplicación creada en sinergia por particulares, empresas y
+      asociaciones con un sólo objetivo:<br/> <strong>Ayudar a tener un ejercicio democrático,
+      limpio, seguro y efectivo.</strong>
+    como_vamos: ¿Cómo vamos? Colima?
+    como_vamos_twitter: '#CómoVamosColima'
+
+  disclaimer: Vigilente es una aplicación apartidista y creada sin fines de lucro.
   form:
     legend: Regístrate y mantente informado
     name: Nombre

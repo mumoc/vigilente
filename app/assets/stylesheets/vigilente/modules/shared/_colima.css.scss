@@ -1,3 +1,25 @@
 .colima {
   background: $white;
 }
+
+.colima-disclaimer {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.colima-participant {
+  display: inline-table;
+  margin: 15px;
+  width: 20%;
+
+  img {
+    width: 100%;
+  }
+}
+
+@media #{$phone} {
+  .colima-participant {
+    width: 40%;
+  }
+}
+
