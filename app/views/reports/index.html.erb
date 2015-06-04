@@ -17,7 +17,7 @@
       <div id='map-canvas' class='reports-map'></div>
     </section>
 
-    <section class='sections-crimes'>
+    <section class='sections-crimes js-crimes'>
       <%= render partial: 'crimes_header' %>
 
       <ul class='reports-crimes-list'>
@@ -41,9 +41,11 @@
 
   <script>
     $(document).ready(function(){
-      new (Vigilente.Popup)({ popup: $('#about-popup'), triggers: $('.js-popup') })
-
-
+      new (Vigilente.Popup)({ popup: $('#about-popup'), triggers: $('.js-popup') });
+      new (Vigilente.Crimes)({ list: $('.js-crimes'),
+                               crimeClass: '.js-crime',
+                               moreClass: '.js-crime-more',
+                               closeClass: '.js-crime-close' });
     });
   </script>
 

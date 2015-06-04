@@ -1,5 +1,5 @@
-<li class='reports-crime'>
-  <%= link_to image_tag('close_icon.png'), '#', class: 'reports-crime-close' %>
+<li class='reports-crime js-crime'>
+  <%= link_to image_tag('close_icon.png'), '#', class: 'reports-crime-close js-crime-close' %>
 
   <b class='reports-crime-counter'>3</b>
   <figure class='reports-crime-images'>
@@ -11,7 +11,7 @@
   <div class='reports-crime-description'>
     <h3 class='reports-crime-description-title'>Compra de votos</h3>
     <p class='reports-crime-description-text'>Dummy awa ko nore su</p>
-    <%= link_to I18n.t(:view_more, scope: [:reports, :main]), '#', class: 'reports-crime-description-more'%>
+    <%= link_to I18n.t(:view_more, scope: [:reports, :main]), '#', class: 'reports-crime-description-more js-crime-more'%>
   </div>
 </li>
 

@@ -1,9 +1,9 @@
 window.Vigilente ||= {}
 
 class Vigilente.Popup
-  constructor: (args) ->
-    @$popup = args['popup']
-    @$triggers = args['triggers']
+  constructor: ->
+    @$popup = arguments[0].popup
+    @$triggers = arguments[0].triggers
     @bindActions()
 
   bindActions: ->
