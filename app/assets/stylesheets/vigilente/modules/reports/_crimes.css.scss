@@ -1,5 +1,10 @@
-%reports-cell {
+%reports-table {
   display: inline-table;
+  vertical-align: middle;
+}
+
+%reports-cell {
+  display: table-cell;
   vertical-align: middle;
 }
 
@@ -24,11 +29,11 @@
 }
 
 .reports-crimes-description {
-  @extend %reports-cell;
+  @extend %reports-table;
 }
 
 .reports-separator {
-  @extend %reports-cell;
+  @extend %reports-table;
 
   border-right: 1px solid $tundora;
   height: 40px;
@@ -36,7 +41,7 @@
 }
 
 .reports-crimes-app {
-  @extend %reports-cell;
+  @extend %reports-table;
 
   color: $tundora;
   font-size: 14px;
@@ -105,6 +110,12 @@
   }
 }
 
+.reports-crime-image:hover {
+  @include box-shadow(0px 0px 5px $dustyGray);
+
+  cursor: pointer;
+}
+
 .reports-image-caption {
   font-size: 12px;
   color: $tundora;
@@ -119,7 +130,6 @@
 
 .reports-crime-description {
   @extend %reports-cell;
-
 }
 
 .reports-crime-description-title {
@@ -131,6 +141,14 @@
 .reports-crime-description-text {
   font-size: 14px;
   margin: 5px 0;
+  max-height: 1.3em;
+  max-width: 40em;
+  overflow: hidden;
+
+  .active & {
+    max-height: none;
+    max-width: none;
+  }
 }
 
 .reports-crime-description-more {
@@ -140,6 +158,32 @@
 
   .active & {
     display: none;
+  }
+}
+
+/*ITEM CRIME BIG IMAGE*/
+.reports-crime-big-image {
+  background-color: rgba(242, 242, 242, .8);
+  display: none;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+
+  &.active {
+    display: block;
+  }
+}
+
+.reports-crime-big-image-container {
+  height: 100%;
+  width: 25%;
+  margin: 0 auto;
+  position: relative;
+
+  img {
+    height: 100%;
   }
 }
 
