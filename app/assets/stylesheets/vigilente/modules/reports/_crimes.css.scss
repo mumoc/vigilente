@@ -1,0 +1,59 @@
+%reports-cell {
+  display: inline-table;
+  vertical-align: middle;
+}
+
+.reports-crimes-header {
+  display: table;
+  width: 100%;
+}
+
+.reports-crimes-title {
+  @extend %title;
+
+  color: $valencia;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.reports-crimes-info {
+  text-align: right;
+}
+
+.reports-crimes-description {
+  @extend %reports-cell;
+}
+
+.reports-separator {
+  @extend %reports-cell;
+
+  border-right: 1px solid $tundora;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.reports-crimes-app {
+  @extend %reports-cell;
+
+  color: $tundora;
+  font-size: 14px;
+  margin-left: 10px;
+
+  img {
+    max-height: 40px;
+  }
+}
+
+
+.reports-crimes-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.reports-crime {
+  border-top: 1px solid $concrete;
+}
+
+.reports-crime-counter {}
+.reports-crime-images {}
+.reports-crime-description {}

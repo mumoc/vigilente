@@ -50,7 +50,7 @@ en:
     main:
       map_title: Consulta en el mapa donde se comenten los delitos electorales.
       list_title: Reportes de delitos electorales
-      description: Si tienes algún delito electoral que reportar, descarga la app.
+      description: Si tienes algún delito electoral<br/>que reportar, descarga la app.
       view_more: Ver más
       prev: Anterior
       next: Siguiente

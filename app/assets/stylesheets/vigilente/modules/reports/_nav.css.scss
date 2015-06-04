@@ -11,11 +11,10 @@
 }
 
 .reports-nav-title {
+  @extend %title;
+
   color: $valencia;
-  font-size: 18px;
-  margin: 0;
-  padding: 10px 20px;
-  text-transform: uppercase;
+  padding-right: 15px;
 }
 
 .reports-nav-link {
