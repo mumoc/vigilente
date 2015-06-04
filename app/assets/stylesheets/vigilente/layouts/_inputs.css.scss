@@ -1,6 +1,6 @@
 .text {
   background-color: $white;
-  color: $dusty-gray;
+  color: $dustyGray;
   float: left;
   font-size: 16px;
   font-weight: 300;
@@ -9,7 +9,7 @@
 
   @include sizing(border-box);
   @include placeholder {
-    color: $dusty-gray;
+    color: $dustyGray;
   }
 }
 

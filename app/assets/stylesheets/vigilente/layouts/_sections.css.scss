@@ -1,5 +1,5 @@
 .section-dark {
-  background: linear-gradient($wineBerry-dark, $wineBerry-light);
+  background: linear-gradient($wineBerryDark, $wineBerryLight);
   color: $white;
   display: table-row;
   height: 100vh;
@@ -9,7 +9,7 @@
   @extend .section-dark;
 
   background: $concrete;
-  color: $wineBerry-dark;
+  color: $wineBerryDark;
 }
 
 .section-phone-image {

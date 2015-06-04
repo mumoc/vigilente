@@ -1,0 +1,35 @@
+.reports-header {
+  @include sizing(border-box);
+
+  background-image: linear-gradient(to top, #391533 0%, #501947 100%);
+  display: table;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.reports-header-title {
+  display: table-cell;
+}
+
+.reports-header-nav {
+  display: table-cell;
+  text-align: right;
+}
+
+%reports-header-link {
+  font-weight: bold;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+.reports-header-about {
+  @extend %reports-header-link;
+
+  color: $sandyBrown;
+}
+.reports-header-consult {
+  @extend %reports-header-link;
+
+  color: $valencia;
+}
+
