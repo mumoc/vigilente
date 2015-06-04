@@ -34,3 +34,23 @@ en:
     name: Nombre
     email: E-mail
     submit: Enviar
+  reports:
+    header:
+      about: Acerca de
+      consult: Consulta
+    nav:
+      title: Delitos electorales
+      all: Todos los delitos
+      publicity: Publicidad fuera de la casilla
+      racoons: Mapaches
+      violence: Violencia para obstruir la votación
+      buy: Compra de votos
+      credentials: Recolección de credenciales de elector
+      gifts: Condicionamiento regalos de programas sociales
+    main:
+      map_title: Consulta en el mapa donde se comenten los delitos electorales.
+      list_title: Reportes de delitos electorales
+      description: Si tienes algún delito electoral que reportar, descarga la app.
+      view_more: Ver más
+      prev: Anterior
+      next: Siguiente
