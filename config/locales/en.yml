@@ -41,12 +41,12 @@ en:
     nav:
       title: Delitos electorales
       all: Todos los delitos
-      publicity: Publicidad fuera de la casilla
+      publicity: Publicidad fuera de<br/>la casilla
       racoons: Mapaches
-      violence: Violencia para obstruir la votación
+      violence: Violencia para obstruir<br/> la votación
       buy: Compra de votos
-      credentials: Recolección de credenciales de elector
-      gifts: Condicionamiento regalos de programas sociales
+      credentials: Recolección de<br/> credenciales de elector
+      gifts: Condicionamiento regalos<br/> de programas sociales
     main:
       map_title: Consulta en el mapa donde se comenten los delitos electorales.
       list_title: Reportes de delitos electorales

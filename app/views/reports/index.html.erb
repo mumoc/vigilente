@@ -5,17 +5,10 @@
     <%= link_to I18n.t(:consult, scope: [:reports, :header]), '#', class: 'reports-header-consult' %>
   </nav>
 </header>
-<nav>
-  <h2><%= I18n.t(:title, scope: [:reports, :nav]) %></h2>
-  <%= link_to I18n.t(:all, scope: [:reports, :nav]), '#'%>
-  <%= link_to I18n.t(:publicity, scope: [:reports, :nav]), '#'%>
-  <%= link_to I18n.t(:racoons, scope: [:reports, :nav]), '#'%>
-  <%= link_to I18n.t(:violence, scope: [:reports, :nav]), '#'%>
-  <%= link_to I18n.t(:buy, scope: [:reports, :nav]), '#'%>
-  <%= link_to I18n.t(:credentials, scope: [:reports, :nav]), '#'%>
-  <%= link_to I18n.t(:gifts, scope: [:reports, :nav]), '#'%>
-</nav>
-<main>
+<div class='reports-content'>
+  <%= render partial: 'nav' %>
+
+  <main>
   <section>
     <h2><%= I18n.t(:map_title, scope: [:reports, :main]) %></h2>
     <div id="map-canvas" class=""></div>
@@ -31,16 +24,16 @@
     </header>
     <ul>
       <li>
-        <b>3</b>
-        <figure>
-          <%= image_tag('dummy.png', alt: 'image_1')%>
-          <figcaption>2 images</figcaption>
-        </figure>
-        <div>
-          <h3>Compra de votos</h3>
-          <p>Dummy awa ko nore su</p>
-          <%= link_to I18n.t(:view_more, scope: [:reports, :main]), '#'%>
-        </div>
+      <b>3</b>
+      <figure>
+        <%= image_tag('dummy.png', alt: 'image_1')%>
+        <figcaption>2 images</figcaption>
+      </figure>
+      <div>
+        <h3>Compra de votos</h3>
+        <p>Dummy awa ko nore su</p>
+        <%= link_to I18n.t(:view_more, scope: [:reports, :main]), '#'%>
+      </div>
       </li>
     </ul>
     <nav>
@@ -50,7 +43,8 @@
   </section>
   <%= render partial: 'colima', locals: { klass: '' } %>
   <%= render partial: 'footer' %>
-</main>
+  </main>
+</div>
 
 <%- content_for :javascripts do %>
   <%= render partial: 'map_scripts' %>
