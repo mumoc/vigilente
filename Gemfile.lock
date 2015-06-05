@@ -241,7 +241,6 @@ DEPENDENCIES
   byebug
   capistrano-rails!
   capistrano-rbenv (~> 2.0)
-  capistrano-stats
   capistrano3-puma!
   coffee-rails (~> 4.1.0)
   factory_girl
