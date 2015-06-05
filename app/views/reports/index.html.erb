@@ -44,6 +44,7 @@
     $(document).ready(function(){
       new (Vigilente.Popup)({ popup: $('#about-popup'), triggers: $('.js-popup') });
       new (Vigilente.Crimes)({ list: $('.js-crimes') });
+      new (Vigilente.SlideMenu)({ menu: $('.reports-nav'), triggers: $('.js-nav-toggle') });
     });
   </script>
 
