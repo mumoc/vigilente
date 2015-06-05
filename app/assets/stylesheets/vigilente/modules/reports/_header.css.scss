@@ -48,5 +48,12 @@
   }
 }
 
-
+@media #{$tablet} {
+  .reports-header-burguer {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+}
 
