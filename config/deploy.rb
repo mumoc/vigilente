@@ -29,3 +29,4 @@ set :assets_prefix, 'assets'
 set :linked_files, %w{config/database.yml config/newrelic.yml }
 
 set :puma_conf, "#{shared_path}/config/puma.rb"
+set :puma_pid, "/home/deploy/vigilente/tmp/pids/puma.pid"

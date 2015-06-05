@@ -14,6 +14,9 @@ class Api::V1::ReportsController < Api::V1::BaseController
   param_group :report
   def create
     @report = Report.new report_params
+    social_image = ImageComposer.new(params[:images])
+    social_image.upload
+    @report.social_image = social_image.url
     if @report.save
       render json: @report
     else

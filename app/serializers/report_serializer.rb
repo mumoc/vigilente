@@ -12,7 +12,7 @@ class ReportSerializer < ActiveModel::Serializer
   end
 
   def imagen
-    "http://vigilente.mx/twitter-image.png"
+    object.social_image
   end
 
   def images
