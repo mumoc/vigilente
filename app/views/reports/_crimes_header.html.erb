@@ -3,7 +3,6 @@
   <div class='reports-crimes-info'>
     <p class='reports-crimes-description'><%= raw I18n.t(:description, scope: [:reports, :main]) %></p>
     <div class='reports-separator'></div>
-    <%= link_to image_tag('appstore_icon_black.png', alt: I18n.t(:app_store)), '#', class: 'reports-crimes-app' %>
-    <%= link_to image_tag('playstore_icon_black.png', alt: I18n.t(:google_play)), '#', class: 'reports-crimes-app' %>
+    <%= render partial: 'app_logos', locals: { type: 'black' }%>
   </div>
 </header>

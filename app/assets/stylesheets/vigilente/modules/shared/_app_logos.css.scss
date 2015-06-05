@@ -1,0 +1,23 @@
+.app-logo-container {
+  display: inline-table;
+}
+
+.app-logo {
+  @extend %reports-table;
+
+  color: $tundora;
+  font-size: 14px;
+  margin-left: 10px;
+
+  img {
+    max-height: 40px;
+  }
+}
+
+@media #{$phone} {
+  .app-logo-container {
+    display: block;
+    text-align: center;
+  }
+}
+
