@@ -1,0 +1,4 @@
+<div class="app-logo-container <%= klass %>">
+  <%= mail_to 'vigilente@outlook.com', image_tag("appstore_icon_#{type}.png", alt: I18n.t(:app_store)), { class: 'app-logo', subject: 'Estoy interesado en descargar la App para iOS' } %>
+  <%= link_to image_tag("playstore_icon_#{type}.png", alt: I18n.t(:google_play)), 'https://play.google.com/store/apps/details?id=com.crowdint.reportatesting&hl=es', class: 'app-logo' %>
+</div>

@@ -18,13 +18,14 @@
   display: none;
 }
 
-@media #{$phone} {
+@media #{$phone}, #{$tablet} {
   .build-phone {
     display: none;
   }
 
   .build-phone-mobile {
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
   }
 
 }

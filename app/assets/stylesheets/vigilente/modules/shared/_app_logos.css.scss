@@ -1,0 +1,43 @@
+.app-logo-container {
+  display: inline-table;
+}
+
+.app-logo {
+  @extend %reports-table;
+
+  color: $tundora;
+  font-size: 14px;
+
+  .home & {
+    margin-right: 20px;
+  }
+
+  .reports & {
+    margin-left: 10px;
+
+    img {
+      max-height: 40px;
+    }
+  }
+}
+
+.app-logos-disclaimer {
+  max-width: 430px;
+  font-size: 12px;
+  vertical-align: middle;
+
+  a {
+    color: $valencia;
+    text-decoration: none;
+  }
+}
+
+
+
+@media #{$phone} {
+  .app-logo-container {
+    display: block;
+    text-align: center;
+  }
+}
+

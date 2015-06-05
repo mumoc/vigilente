@@ -37,6 +37,8 @@
 }
 
 .form-container {
+  margin-bottom: 20px;
+
   &:before, &:after {
     clear: both;
     content: ' ';
