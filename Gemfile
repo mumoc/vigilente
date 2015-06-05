@@ -24,4 +24,11 @@ group :development, :test do
   gem 'spring'
   gem 'rspec-rails', '~> 3.0'
   gem 'factory_girl'
+  gem 'capistrano-rails', github: 'capistrano/rails'
+  gem 'capistrano-rbenv', '~> 2.0'
+  gem 'capistrano3-puma', github: "seuros/capistrano-puma"
+end
+
+group :production do
+  gem 'puma'
 end
