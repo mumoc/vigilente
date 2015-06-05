@@ -1,5 +1,6 @@
 .reports-content {
   display: table;
+  width: 100%;
 }
 
 .reports-nav {
@@ -45,7 +46,7 @@
   }
 }
 
-@media #{$phone} {
+@media #{$phone}, #{$tablet} {
   .reports-nav {
     @include transition(500ms, ease-in-out);
 
@@ -60,4 +61,3 @@
     }
   }
 }
-

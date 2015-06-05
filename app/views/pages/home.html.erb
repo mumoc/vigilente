@@ -1,4 +1,5 @@
 <main>
+<%= link_to I18n.t(:consulta), reports_path, class: 'nav-link' %>
 <section id='vigilente' class='section-dark section-phone vigilente-section'>
   <div class='wrapper'>
     <article>
@@ -11,8 +12,8 @@
 
         <p class='vigilente-description'><%= I18n.t(:we_need_you) %></p>
 
-        <%= render partial: 'subscriptions/subscription_form', locals: { klass: '' }%>
-        <%= render partial: 'app_logos', locals: { type: 'white' } %>
+        <%= render partial: 'app_logos', locals: { type: 'white', klass: 'home' } %>
+        <p class='app-logos-disclaimer'><%= raw I18n.t(:apps_disclaimer) %></p>
       </div>
     </article>
   </div>
@@ -30,8 +31,8 @@
 
         <p class='build-description'><%= raw(I18n.t(:build)) %></p>
 
-        <%= render partial: 'subscriptions/subscription_form', locals: { klass: 'build-legend' }%>
-        <%= render partial: 'app_logos', locals: { type: 'black' } %>
+        <%= render partial: 'app_logos', locals: { type: 'black', klass: 'home' } %>
+        <p class='app-logos-disclaimer'><%= raw I18n.t(:apps_disclaimer) %></p>
       </div>
     </article>
   </div>
@@ -45,7 +46,7 @@
     <%= render partial: 'process_info' %>
 
     <article class='how-article-consult top-border'>
-      <%= image_tag('consulta_imagen.png', alt: I18n.t(:image, scope: :consult), class: 'how-image-consult') %>
+      <%= link_to image_tag('consulta_imagen.png', alt: I18n.t(:image, scope: :consult), class: 'how-image-consult'), reports_path %>
       <div class='how-article-consult-content'>
         <h3 class='how-subtitle'><%= I18n.t(:title, scope: :consult) %></h3>
         <p class='how-body'><%= raw(I18n.t(:body, scope: :consult)) %></p>

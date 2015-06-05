@@ -14,13 +14,14 @@
   display: none;
 }
 
-@media #{$phone} {
+@media #{$phone}, #{$tablet} {
   .vigilente-phone {
     display: none;
   }
 
   .vigilente-phone-mobile {
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
   }
 }
 
