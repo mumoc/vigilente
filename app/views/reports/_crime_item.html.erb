@@ -2,12 +2,19 @@
   <%= link_to image_tag('close_icon.png'), '#', class: 'reports-crime-close js-crime-close' %>
 
   <b class='reports-crime-counter'>3</b>
-  <figure class='reports-crime-images'>
-    <%= image_tag('dummy.png', alt: 'image_1', class: 'reports-crime-image') %>
-    <%= image_tag('dummy.png', alt: 'image_2', class: 'reports-crime-image') %>
-    <%= image_tag('dummy.png', alt: 'image_3', class: 'reports-crime-image') %>
+  <div class='reports-crime-images'>
+    <%= link_to image_tag('dummy.png', alt: 'image_1', class: 'reports-crime-image'),
+      image_url('dummy.png'),
+      class: 'js-crime-image' %>
+    <%= link_to image_tag('dummy.png', alt: 'image_1', class: 'reports-crime-image'),
+      image_url('dummy.png'),
+      class: 'js-crime-image' %>
+    <%= link_to image_tag('dummy.png', alt: 'image_1', class: 'reports-crime-image'),
+      image_url('dummy.png'),
+      class: 'js-crime-image' %>
     <figcaption class='reports-image-caption'>2 images</figcaption>
-  </figure>
+  </div>
+
   <div class='reports-crime-description'>
     <h3 class='reports-crime-description-title'>Compra de votos</h3>
     <p class='reports-crime-description-text'>
@@ -17,11 +24,6 @@
       voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
     </p>
     <%= link_to I18n.t(:view_more, scope: [:reports, :main]), '#', class: 'reports-crime-description-more js-crime-more'%>
-  </div>
-  <div class='reports-crime-big-image js-big-image'>
-    <div class='reports-crime-big-image-container js-big-image-container'>
-      <%= link_to image_tag('close_icon.png'), '#', class: 'reports-crime-close js-big-image-close' %>
-    </div>
   </div>
 </li>
 

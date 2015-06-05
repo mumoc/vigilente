@@ -8,11 +8,11 @@ class Vigilente.Crimes
   bindActions: =>
     @showCrime()
     @closeCrime()
-    @showBigImage()
-    @closeBigImage()
+    @preventImageActions()
 
   showCrime: ->
     @$list.on 'click', '.js-crime-more', (el) =>
+      @createSlider ($ el.currentTarget)
       @closeAll()
       @toggleCrime ($ el.currentTarget)
       false
@@ -22,23 +22,9 @@ class Vigilente.Crimes
       @toggleCrime ($ el.currentTarget, true)
       false
 
-  showBigImage: ->
-    ($ '.js-crime').on 'click', '.reports-crime-images img', (el) =>
-      image = ($ el.currentTarget)
-      crime = ($ image.parents('.js-crime'))
-      @toggleBigImage(crime, image.clone()) if crime.hasClass('active')
-      false
-
-  closeBigImage: ->
-    ($ '.js-big-image').on 'click', '.js-big-image-close', (el) =>
-      crime = ($ el.delegateTarget)
-      crime.removeClass('active').
-        find('.reports-crime-image').remove()
-      false
-
   closeAll: ->
     @$list.
-      find('.js-crime, .js-big-image').
+      find('.js-crime').
       removeClass 'active'
 
   toggleCrime: ($trigger, toggle = false) =>
@@ -47,11 +33,9 @@ class Vigilente.Crimes
     crime.
       toggleClass 'active', display
 
-  toggleBigImage: ($crime, $image) ->
-    $crime.
-      find('.js-big-image-container').
-      find('.reports-crime-image').
-      remove('').end().
-      append($image).end().
-      find('.js-big-image').
-      addClass 'active'
+  createSlider: ($trigger) ->
+    crime = $trigger.parents '.js-crime'
+    crime.find('.reports-crime-images a').tosrus()
+
+  preventImageActions: ->
+    @$list.on 'click', '.js-crime-image', -> false

@@ -87,26 +87,24 @@
   width: 100px;
   padding: 15px;
 
-  img {
+  a {
     display: block;
     margin: 5px 0;
     max-width: 100%;
   }
 
-  img:nth-of-type(n+2) {
+  a:nth-of-type(n+2) {
     display: none;
   }
 
   .active & {
-    img:nth-of-type(n+2) {
+    a:nth-of-type(n+2) {
       display: block;
     }
   }
 }
 
 .reports-crime-image:hover {
-  @include box-shadow(0px 0px 5px $dustyGray);
-
   cursor: pointer;
 }
 
@@ -119,9 +117,7 @@
   }
 }
 
-
 /*ITEM CRIME DESCRIPTION*/
-
 .reports-crime-description {
   @extend %reports-cell;
 }
@@ -152,36 +148,6 @@
 
   .active & {
     display: none;
-  }
-}
-
-/*ITEM CRIME BIG IMAGE*/
-.reports-crime-big-image {
-  background-color: rgba(242, 242, 242, .8);
-  display: none;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  width: 100%;
-
-  &.active {
-    display: block;
-  }
-}
-
-.reports-crime-big-image-container {
-  height: 100%;
-
-  .reports-crime-image {
-    @include box-shadow(0px 0px 10px $black);
-
-    height: 100%;
-    position: absolute;
-  }
-
-  .reports-crime-close {
-    left: 15px;
-    z-index: 9999;
   }
 }
 
