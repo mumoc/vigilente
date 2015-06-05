@@ -3,6 +3,10 @@ en:
   phone_vigilente: El Vigilente electoral
   app_store: Available on the app store
   google_play: Get it on google play
+  apps_disclaimer: |
+    La aplicación de iOS está en revisión en la App Store,
+    contáctanos a  <a href='mailto:vigilente@outlook.com'>vigilente@outlook.com</a>
+    para darte acceso de una manera segura y alterna.
   vigilente_title: El Vigilente
   we_need_you: Tú puedes ser el Vigilente que necesitamos en las elecciones
   build: |

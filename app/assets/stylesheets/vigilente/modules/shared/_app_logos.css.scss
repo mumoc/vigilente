@@ -21,11 +21,18 @@
   }
 }
 
-.app-logo-obtain {
-  display: inline-table;
+.app-logos-disclaimer {
+  max-width: 430px;
+  font-size: 12px;
   vertical-align: middle;
-  margin-left: 10px;
+
+  a {
+    color: $valencia;
+    text-decoration: none;
+  }
 }
+
+
 
 @media #{$phone} {
   .app-logo-container {

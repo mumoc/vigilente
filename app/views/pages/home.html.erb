@@ -12,6 +12,7 @@
         <p class='vigilente-description'><%= I18n.t(:we_need_you) %></p>
 
         <%= render partial: 'app_logos', locals: { type: 'white', klass: 'home' } %>
+        <p class='app-logos-disclaimer'><%= raw I18n.t(:apps_disclaimer) %></p>
       </div>
     </article>
   </div>
@@ -30,6 +31,7 @@
         <p class='build-description'><%= raw(I18n.t(:build)) %></p>
 
         <%= render partial: 'app_logos', locals: { type: 'black', klass: 'home' } %>
+        <p class='app-logos-disclaimer'><%= raw I18n.t(:apps_disclaimer) %></p>
       </div>
     </article>
   </div>
