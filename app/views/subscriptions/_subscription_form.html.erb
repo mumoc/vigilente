@@ -1,4 +1,4 @@
-<div id="form-subscription-container" class='form-container' >
+<div id="form-subscription-container" class='form-container subscriptions-form' >
   <%= form_tag(subscriptions_path, remote: true) do -%>
     <legend class="legend <%= klass %>"><%= I18n.t(:legend, scope: :form) %></legend>
      <%= text_field_tag(:name, '', placeholder: I18n.t(:name, scope: :form), class: 'text')%>

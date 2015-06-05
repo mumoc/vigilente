@@ -40,18 +40,6 @@
   margin-left: 10px;
 }
 
-.reports-crimes-app {
-  @extend %reports-table;
-
-  color: $tundora;
-  font-size: 14px;
-  margin-left: 10px;
-
-  img {
-    max-height: 40px;
-  }
-}
-
 /*CRIMES LIST*/
 
 .reports-crimes-list {
