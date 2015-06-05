@@ -14,6 +14,12 @@
   }
 }
 
+.app-logo-obtain {
+  display: inline-table;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
 @media #{$phone} {
   .app-logo-container {
     display: block;
