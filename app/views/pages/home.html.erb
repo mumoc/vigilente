@@ -11,8 +11,7 @@
 
         <p class='vigilente-description'><%= I18n.t(:we_need_you) %></p>
 
-        <%= render partial: 'subscriptions/subscription_form', locals: { klass: '' }%>
-        <%= render partial: 'app_logos', locals: { type: 'white' } %>
+        <%= render partial: 'app_logos', locals: { type: 'white', klass: 'home' } %>
       </div>
     </article>
   </div>
@@ -30,8 +29,7 @@
 
         <p class='build-description'><%= raw(I18n.t(:build)) %></p>
 
-        <%= render partial: 'subscriptions/subscription_form', locals: { klass: 'build-legend' }%>
-        <%= render partial: 'app_logos', locals: { type: 'black' } %>
+        <%= render partial: 'app_logos', locals: { type: 'black', klass: 'home' } %>
       </div>
     </article>
   </div>

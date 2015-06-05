@@ -7,10 +7,17 @@
 
   color: $tundora;
   font-size: 14px;
-  margin-left: 10px;
 
-  img {
-    max-height: 40px;
+  .home & {
+    margin-right: 20px;
+  }
+
+  .reports & {
+    margin-left: 10px;
+
+    img {
+      max-height: 40px;
+    }
   }
 }
 
