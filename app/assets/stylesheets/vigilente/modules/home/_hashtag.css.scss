@@ -1,0 +1,28 @@
+.hashtag-image {
+  display: inline-block;
+  margin-right: 30px;
+  width: 350px;
+}
+
+.hastag-image-mobile {
+  display: none;
+}
+
+.hashtag-description {
+  color: $tundora;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 40px 0;
+  max-width: 400px;
+}
+
+@media #{$phone}, #{$tablet} {
+  .hashtag-image {
+    display: none;
+  }
+
+  .hastag-image-mobile {
+    display: block;
+    margin: 0 auto;
+  }
+}

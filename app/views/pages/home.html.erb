@@ -1,61 +1,79 @@
 <main>
-<%= link_to I18n.t(:consulta), reports_path, class: 'nav-link' %>
-<section id='vigilente' class='section-dark section-phone vigilente-section'>
-  <div class='wrapper'>
-    <article>
-      <%= image_tag('urna_mapache_mobile.png', alt: I18n.t(:phone_welcome), class: 'vigilente-phone-mobile') %>
+  <%= link_to I18n.t(:consulta), reports_path, class: 'nav-link' %>
 
-      <%= image_tag('phone_01.png', alt: I18n.t(:phone_welcome), class: 'section-phone-image vigilente-phone') %>
+  <section id='vigilente' class='section-dark section-phone vigilente-section'>
+    <div class='wrapper'>
+      <article>
+        <%= image_tag('urna_mapache_mobile.png', alt: I18n.t(:phone_welcome), class: 'vigilente-phone-mobile') %>
 
-      <div class='section-content'>
-        <h1><%= image_tag('logo_top.png', alt: I18n.t(:vigilente_title)) %></h1>
+        <%= image_tag('phone_01.png', alt: I18n.t(:phone_welcome), class: 'section-phone-image vigilente-phone') %>
 
-        <p class='vigilente-description'><%= I18n.t(:we_need_you) %></p>
+        <div class='section-content'>
+          <h1><%= image_tag('logo_top.png', alt: I18n.t(:vigilente_title)) %></h1>
 
-        <%= render partial: 'app_logos', locals: { type: 'white', klass: 'home' } %>
-        <p class='app-logos-disclaimer'><%= raw I18n.t(:apps_disclaimer) %></p>
-      </div>
-    </article>
-  </div>
-</section>
+          <p class='vigilente-description'><%= I18n.t(:we_need_you) %></p>
 
-<section id='build' class='section-light section-phone build-section'>
-  <div class='wrapper'>
-    <article>
-      <%= image_tag('group_mobile.png', alt: I18n.t(:phone_vigilente), class: 'build-phone-mobile') %>
+          <%= render partial: 'app_logos', locals: { type: 'white', klass: 'home' } %>
+          <p class='app-logos-disclaimer'><%= raw I18n.t(:apps_disclaimer) %></p>
+        </div>
+      </article>
+    </div>
+  </section>
 
-      <%= image_tag('phone_02.png', alt: I18n.t(:phone_vigilente), class: 'section-phone-image build-phone') %>
+  <section id='build' class='section-light section-phone build-section'>
+    <div class='wrapper'>
+      <article>
+        <%= image_tag('group_mobile.png', alt: I18n.t(:phone_vigilente), class: 'build-phone-mobile') %>
 
-      <div class='section-content'>
-        <h2><%= image_tag('logo_top_02.png', alt: I18n.t(:vigilente_title)) %></h2>
+        <%= image_tag('phone_02.png', alt: I18n.t(:phone_vigilente), class: 'section-phone-image build-phone') %>
 
-        <p class='build-description'><%= raw(I18n.t(:build)) %></p>
+        <div class='section-content'>
+          <h2><%= image_tag('logo_top_02.png', alt: I18n.t(:vigilente_title)) %></h2>
 
-        <%= render partial: 'app_logos', locals: { type: 'black', klass: 'home' } %>
-        <p class='app-logos-disclaimer'><%= raw I18n.t(:apps_disclaimer) %></p>
-      </div>
-    </article>
-  </div>
-</section>
+          <p class='build-description'><%= raw(I18n.t(:build)) %></p>
 
-<section id='how' class='section-dark'>
-  <div class='wrapper how-wrapper'>
+          <%= render partial: 'app_logos', locals: { type: 'black', klass: 'home' } %>
+          <p class='app-logos-disclaimer'><%= raw I18n.t(:apps_disclaimer) %></p>
+        </div>
+      </article>
+    </div>
+  </section>
 
-    <h2 class='how-title'><%= I18n.t(:how_it_works) %></h2>
+  <section id='how' class='section-dark'>
+    <div class='wrapper how-wrapper'>
 
-    <%= render partial: 'process_info' %>
+      <h2 class='how-title'><%= I18n.t(:how_it_works) %></h2>
 
-    <article class='how-article-consult top-border'>
-      <%= link_to image_tag('consulta_imagen.png', alt: I18n.t(:image, scope: :consult), class: 'how-image-consult'), reports_path %>
-      <div class='how-article-consult-content'>
-        <h3 class='how-subtitle'><%= I18n.t(:title, scope: :consult) %></h3>
-        <p class='how-body'><%= raw(I18n.t(:body, scope: :consult)) %></p>
-      </div>
-    </article>
-  </div>
-</section>
+      <%= render partial: 'process_info' %>
+
+      <article class='how-article-consult top-border'>
+        <%= link_to image_tag('consulta_imagen.png', alt: I18n.t(:image, scope: :consult), class: 'how-image-consult'), reports_path %>
+        <div class='how-article-consult-content'>
+          <h3 class='how-subtitle'><%= I18n.t(:title, scope: :consult) %></h3>
+          <p class='how-body'><%= raw(I18n.t(:body, scope: :consult)) %></p>
+        </div>
+      </article>
+    </div>i
+  </section>
+
+  <section id='hashtag-too' class='section-light'>
+    <div class='wrapper'>
+      <article>
+        <%= image_tag('icono_hashtag_2.png', alt: I18n.t(:hastagh_too), class: 'hastag-image-mobile') %>
+
+        <%= image_tag('icono_hashtag.png', alt: I18n.t(:hashtag_too), class: 'hashtag-image') %>
+
+        <div class='section-content'>
+          <h2><%= image_tag('logo_top_02.png', alt: I18n.t(:vigilente_title)) %></h2>
+          <p class='hashtag-description'><%= raw I18n.t(:description, scope: :hashtag) %></p>
+        </div>
+      </article>
+    </div>
+  </section>
 
   <%= render partial: 'colima', locals: { klass: 'section-light colima' } %>
+
 </main>
 
 <%= render partial: 'footer' %>
+

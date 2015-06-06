@@ -39,7 +39,11 @@ en:
     como_vamos: ¿Cómo vamos? Colima?
     como_vamos_twitter: '#CómoVamosColima'
     coparmex: Coparmex
-
+  hashtag:
+    hashtag_too: '#vigilente'
+    description: |
+      También puedes usar el hashtag <strong>#vigilente</strong> en redes sociales
+      para reportar aquellas fallas que encuentres.
   disclaimer: Vigilente es una aplicación apartidista y creada sin fines de lucro.
   form:
     legend: Regístrate y mantente informado
