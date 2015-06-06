@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/privacy', to: 'pages#privacy'
   get '/terms', to: 'pages#terms'
   get '/support', to: 'pages#support'
+  get '/android', to: redirect('https://play.google.com/store/apps/details?id=com.crowdint.reportatesting')
 
   # get '/reportes', to: 'reports#index'
   get '/reportes', to: redirect('/')
